@@ -1,6 +1,6 @@
 ## Solar Scheme
 
-Calculating when to change an air source heat pump.
+An application to forecast energy consumption for a private home, to figure out if it's a worthwhile investment to install solar and/or battery technology.
 
 ## Getting started
 
@@ -13,6 +13,10 @@ conda env create -f environment.yml
 conda activate solarscheme
 pytests tests/
 ```
+
+### How to use
+
+This init code commit is specific to a house in Gloucestershire, UK. However, you can directly alter variables in `src/solar_scheme.py` to match your situation.
 
 ## Contact
 
