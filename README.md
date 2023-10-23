@@ -12,7 +12,7 @@ Then run the following:
 ```sh
 conda env create -f environment.yml --force
 conda activate solarscheme
-python src/solar_scheme.py
+python -m main
 ```
 
 ### How to use
