@@ -1,0 +1,14 @@
+name: solarscheme
+
+channels:
+  - conda-forge
+  - anaconda
+
+dependencies:
+  - python=3.11
+  - pip=23.2.1
+  - pytest
+  - pandas=2.1.1
+  - numpy=1.26.0
+  - python-dateutil=2.8.2
+  - matplotlib=3.8.0
