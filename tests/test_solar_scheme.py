@@ -1,5 +1,5 @@
-from src import solar_scheme
-from src import sunrise_sunset
+from app import solar_scheme
+from app import sunrise_sunset
 import numpy as np
 import datetime as datetime
 import requests
