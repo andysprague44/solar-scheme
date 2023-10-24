@@ -3,7 +3,7 @@ on:
     branches:
       - main
       - feature/deploy-fast-api
-      
+
 jobs:
   deploy:
     name: dev-deploy
@@ -20,10 +20,10 @@ jobs:
       with:
         python-version: 3.11
 
-    - name: Install npm
-      run: |
-        npm cache clean --force
-        npm install --legacy-peer-deps  
+    # - name: Install npm
+    #   run: |
+    #     npm cache clean --force
+    #     npm install --legacy-peer-deps  
  
     - name: Create layers
       run: |
