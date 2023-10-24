@@ -48,7 +48,7 @@ def run_solar_scheme():
         lon)
     sunrise = np.array(sunrise)
     sunset = np.array(sunset)
-
+    
     night_time_start = datetime.timedelta (hours=24, minutes=0)
     night_time_end = datetime.timedelta (hours=31, minutes = 0)
 
@@ -145,5 +145,6 @@ def run_solar_scheme():
             'total_night_consumption': total_night_consumption,
             'total_consumption': total_consumption,
         })
+    df_result.index.name = 'month'
 
     return df_result

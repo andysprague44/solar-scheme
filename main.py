@@ -1,9 +1,11 @@
 from src import solar_scheme
+from typing import Union
+from fastapi import FastAPI
 
-if (__name__ == '__main__'):
-    
+app = FastAPI()
+
+
+@app.get("/")
+def run_solar_scheme():
     df = solar_scheme.run_solar_scheme()
-
-    for index, row in df.iterrows():
-        print([index] + row.tolist())
-    
+    return df.reset_index().to_dict('records')
